@@ -11,14 +11,18 @@ Sections with 🐛 are problems I would classify as bugs.
 
 # Table of Contents
 
-<!-- TOC -->
+<!--
+Automatic updates are disabled on this table of contents because the emojis break the anchors.
+It should be updated manually on occasion and have the emojis removed from the links manually.
+-->
+<!-- TOC updateOnSave:false -->
 
 - [General comments and concerns](#general-comments-and-concerns)
 - [Table of Contents](#table-of-contents)
 - [`TeleoperatedMode`](#teleoperatedmode)
     - [Add comments to delimit the sections.](#add-comments-to-delimit-the-sections)
-    - [🐛 Linear tolerance should be applied to the magnitude](#🐛-linear-tolerance-should-be-applied-to-the-magnitude)
-    - [🐛 `ROTATION_SPEED_THRESHOLD` is applied too late.](#🐛-rotation_speed_threshold-is-applied-too-late)
+    - [🐛 Linear tolerance should be applied to the magnitude](#-linear-tolerance-should-be-applied-to-the-magnitude)
+    - [🐛 `ROTATION_SPEED_THRESHOLD` is applied too late.](#-rotation_speed_threshold-is-applied-too-late)
     - [Add teleop override for autonomous driving modes](#add-teleop-override-for-autonomous-driving-modes)
     - [Consider adding a second controller for the peripherals](#consider-adding-a-second-controller-for-the-peripherals)
     - [Add panic orientation reset](#add-panic-orientation-reset)
@@ -26,8 +30,8 @@ Sections with 🐛 are problems I would classify as bugs.
     - [Reset motor controllers to factory defaults](#reset-motor-controllers-to-factory-defaults)
     - [Remove `driveManualImplementation`](#remove-drivemanualimplementation)
     - [`lookAt` and `maintainHeading` should set the `driveMode` to `DRIVERCONTROL`](#lookat-and-maintainheading-should-set-the-drivemode-to-drivercontrol)
-    - [🐛 `stop` should call `lookAt`](#🐛-stop-should-call-lookat)
-    - [🔥🐛🔥 **`init` must not call `resetYaw` every time**](#🔥🐛🔥-init-must-not-call-resetyaw-every-time)
+    - [🐛 `stop` should call `lookAt`](#-stop-should-call-lookat)
+    - [🔥🐛🔥 **`init` must not call `resetYaw` every time**](#-init-must-not-call-resetyaw-every-time)
 
 <!-- /TOC -->
 
