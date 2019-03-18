@@ -62,6 +62,8 @@ public class Drive implements IDrive {
         return driveMode;
     }
 
+    // ============================================================ Autonomous Methods ============================================================
+
     @Override
     public void driveDistance(double distanceInches, double xDirectionSpeed, double yDirectionSpeed) {
 
@@ -81,6 +83,8 @@ public class Drive implements IDrive {
     public void rotateDegrees(double relativeAngle, double angularSpeed, Runnable completionRoutine) {
 
     }
+
+    // ============================================================ Teleop Methods ============================================================
 
     @Override
     public void driveManual(double xDirectionSpeed, double yDirectionSpeed) {
@@ -112,6 +116,8 @@ public class Drive implements IDrive {
         desiredAngle = gyroscope.getYaw();
         rotationSpeed = MAINTAINING_HEADING_SPEED;
     }
+
+    // ============================================================ Internals ============================================================
 
     private void setCompletionRoutine(Runnable completionRountime) {
         if (currentCompletionRoutine != null) {
