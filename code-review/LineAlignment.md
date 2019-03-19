@@ -121,7 +121,7 @@ public void periodic() {
     } else if (driveMode == DriveMode.AUTODRIVINGTRAIGHT) {
         throw new IllegalStateException("Auto-driving straight is not implemented!");
     } else if (driveMode == DriveMode.AUTOROTATING) {
-        throw new IllegalStateException("Auto-driving straight is not implemented!");
+        throw new IllegalStateException("Auto-driving rotation is not implemented!");
     } else if (driveMode == DriveMode.LINEALIGNMENT) {
         leftMotorControllerLead.set(ControlMode.PercentOutput, 0.0);
         rightMotorControllerLead.set(ControlMode.PercentOutput, 0.0);
