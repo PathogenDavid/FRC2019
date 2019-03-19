@@ -33,7 +33,7 @@ To implement `AnalogLineDetector`, you'll need the following:
     * This will be used to implement `isOnLine` and aid with calibration.
     * The implementation of this method should return the voltage reported by the sensor.
     * There's multiple ways to get the voltage from the `AnalogInput`. I think [`getVoltage`](http://first.wpi.edu/FRC/roborio/release/docs/java/edu/wpi/first/wpilibj/AnalogInput.html#getVoltage%28%29) should be good enough.
-3. Add a `double` constant for the line threshold. (The range is going to 0..5, so 2.5 is fine to start. We'll calibrate it on practice day.)
+3. Add a `double` constant for the line threshold. (The range is going to 0..5, ~~so 2.5 is fine to start.~~ 1.45 seems to be a good value from testing with an Arduino. We'll calibrate it with the real field on practice day.)
 4. Add an implementation for `isOnLine` that returns true if the sensor reports a voltage (as reported by `getRawValue`) above the threshold.
 
 Finally, make sure `Robot` is modified to store/instantiate a new instance of this line detector.
